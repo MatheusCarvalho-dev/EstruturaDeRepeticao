@@ -2,7 +2,8 @@
 Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais.
 Valide a entrada e permita repetir a operação.
 """
-
+nome_a = 'Espanha'
+nome_b = 'Brasil'
 
 ano = 0
 
@@ -16,4 +17,9 @@ while a <= b:
 	b += b * (b_cres)
 	ano += 1
 
-print ( "A ultrapassa ou iguala a B em %d anos" %ano )
+print ( "%s ultrapassa ou iguala ao %s em %d anos" %(nome_a, nome_b, ano) )
+
+"""s
+%s ---> mais usado para formatação em variaveis tipo string
+%d ---> mais usado para formatação em variaveis tipo int
+"""
